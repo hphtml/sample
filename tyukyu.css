@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+/*--------ここまでリセットーーーーー*/
+
+body{
+background: url(bg.png);
+border-top: 5px solid #345c39;
+font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", MS PGothic;
+}
+
+/*--------全体ーーーーー*/
+.zentai{
+    width: 960px;
+	margin: 0 auto;
+}
+
+
+/*--------ヘッダーーーーー*/
+header{
+    width: 950px;
+    height: auto;
+    
+    position: relative;
+}
+
+header h1 {
+	font-size: 12px;
+    color: #555555;
+    background: url(logo.png) no-repeat;
+    padding-left: 51px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+header h1 span {
+	font-size: 26px;
+	color: #734339;
+    font-weight: bold;
+    
+}
+
+header nav {
+    float: right;
+    display: inline-block;
+    margin-top: 37px;
+}
+
+header nav ul li {
+	float: left;
+	margin-left: 29px;
+}
+
+header nav ul li a {
+	font-size: 16px;
+	font-weight: bold;
+	color: #734339;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	color: #345c39;
+	border-bottom: 4px solid #345c39;
+}
+
+header img{
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+
+/*--------topーーーーー*/
+.top{
+    width: 950px;
+    height: 290px;
+    margin-bottom: 20px;    
+}
+
+/*--------leftーーーーー*/
+.left{
+    width: 535px;
+	height: auto;
+    background-color: #fff;
+    float: left;
+    margin-right: 30px;
+    padding: 10px;
+    
+}
+
+.left ul {
+	overflow: scroll;
+	width: 535px;
+	height: 160px;
+}
+
+.left h2{
+    font-size: 17px;
+	font-weight: bold;
+    color: #734339;
+    border-left: 5px solid #ba3009;
+	padding-left: 10px;
+
+}
+
+.left ul li {
+	font-size: 13px;
+	font-weight: normal;
+	color: #927e7a;
+    line-height: 32px;
+    border-bottom: 1px dotted #d0d0d0;
+}
+
+
+.left ul li span {
+	font-size: 12px;
+    font-weight: normal;
+    margin-right: 15px;
+    color: #b5b3b3;
+}
+    
+/*--------rightーーーーー*/
+.right{
+    width: 365px;
+	height: 198px;
+    
+    float: left;
+}
+
+.right ul li{
+    line-height: 60px;
+	margin-bottom: 20px;
+}
+
+.right ul li a{
+    font-size: 17px;
+	font-weight: bold;
+	color: #734339;
+	text-decoration: none;
+    padding-left: 140px;
+}
+.right ul li a#contact{
+    background: url(contact.jpg);
+    width: 225px;
+    height: 60px;
+    display: block;
+}
+
+.right ul li a#blog{
+    background: url(blog.jpg);
+    width: 225px;
+    height: 60px;
+    display: block;
+}
+
+.clear{
+    clear: both;
+}
+
+/*--------footerーーーーー*/
+footer{
+    width: 100%;
+    
+    background-color: #345c39;
+    line-height: 58px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+	font-size: 12px;
+}
